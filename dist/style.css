@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    color: white;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    min-height: 100%;
+    background: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 100%;
+    background: black;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin: 2vh 0vh 4vh 0vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid white;
+    color: rgba(255,233,179,1);
+    font-size: 2.5rem;
+}
+
+.menu {
+    font-size: 1.5rem;
+    margin: 1vh 0;
+}
+
+.menu:hover {
+    text-shadow: 0px 0px 5px rgba(255,233,179,1);
+    cursor: pointer;
+}
+
+.selected-project {
+    text-shadow: 0px 0px 5px rgba(255,233,179,1);
+    color: gold;
+}
+
+#nav-buttons-layout {
+    margin: 5vh 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+
+#add-project {
+    color: black;
+    background: white;
+    border: 1px solid gainsboro;
+    margin-top: 2vh;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+#add-project:hover {
+    background: rgb(144, 211, 144); 
+    box-shadow: 0px 0px 5px rgb(144, 211, 144);
+    cursor: pointer;
+}
+
+#delete-project {
+    color: black;
+    background: white;
+    border: 1px solid gainsboro;
+    margin-top: 2vh;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+#delete-project:hover {
+    background: rgb(211, 148, 144);
+    box-shadow: 0px 0px 5px rgb(211, 148, 144);
+    cursor: pointer;
+}
+
+#content {
+    width: 100%;
+    background: rgb(143,99,75,1);
+    background: linear-gradient(90deg, rgba(143,99,75,1) 0%, rgba(255,233,179,1) 100%);
+}
+
+#form {
+    position: fixed;
+    width: 500px;
+    top: 20vh;
+    left: 40%;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px 0px 50px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#form-header {
+    width: 100%;
+    border-radius: 500px 0px 0px 0px;
+    border-bottom: 2px solid black;
+    background: gainsboro;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#form-header > h2 {
+    width: 90%;
+    text-align: center;
+    color: black;
+}
+
+#close-form {
+    width: 10%;
+    border: none;
+    font-size: 1.2rem;
+    background: rgb(209, 74, 74);
+}
+
+#close-form:hover {
+    cursor: pointer;
+    background: rgb(214, 52, 52);
+}
+
+#form > input {
+    margin-top: 10px;
+    width: 70%;
+    margin-left: 20px;
+    color: black;
+}
+
+#form > button {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+    color: black;
+    border: 1px solid black;
+    background: rgb(144, 211, 144);
+}
+
+#form > button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+#table {
+    max-width: 1000px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    height: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: rgb(219, 178, 116);
+}
+
+th, td {
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+
+table tr:hover td {
+    background: rgb(195, 213, 250);
+}
+
+tr:nth-child(even) {background: white}
+tr:nth-child(odd) {background: gainsboro}
+
+i {
+    color: black;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#titl {
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 3rem;
+}
+
+#desc {
+    color: black;
+    margin-left: 8vw;
+}
+
+#task-add {
+    margin-top: 2vh;
+    color: black;
+    background: white;
+    border: 1px solid gainsboro;
+    padding: 10px 25px;
+}
+
+#task-add:hover {
+    background: rgb(144, 211, 144); 
+    box-shadow: 0px 0px 5px rgb(144, 211, 144);
+    border: 1px solid black;
+    cursor: pointer;
+}
